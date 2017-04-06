@@ -1,0 +1,8 @@
+version: '2'
+services:
+  slowBuild:
+    build:
+      context: .
+      dockerfile: SlowDockerfile
+  redis:
+    image: redis:3.2
