@@ -1,4 +1,4 @@
 FROM node
 RUN mkdir /foo;
-RUN sleep 41;
-CMD sleep 10; echo "Done41"
+RUN sleep 4;
+CMD sleep 10; echo "Done4"
