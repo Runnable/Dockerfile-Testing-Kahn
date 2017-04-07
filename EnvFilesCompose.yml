@@ -9,7 +9,7 @@ services:
       - TESTFOO=true
       - TESTBar=false
     env_file:
-      - .barEnv
+      - .fooEnv
   web1:
     build:
       context: git@github.com:Runnable/Dockerfile-Testing-Kahn
