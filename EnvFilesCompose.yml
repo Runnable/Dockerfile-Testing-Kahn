@@ -1,9 +1,7 @@
 version: '2'
 services:
   web:
-    build:
-      context: git@github.com:Runnable/Dockerfile-Testing-Kahn
-      dockerfile: LoggerDockerfile
+    build: git@github.com:Runnable/Dockerfile-Testing-Kahn-1
     container_name: web
     environment:
       - TESTFOO=true
