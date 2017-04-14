@@ -8,6 +8,7 @@ services:
     environment:
       - TESTFOO=true
       - TESTBar=false
+      - SMALLCHANGE=1
     env_file:
       - ./env/foo/.env
   web1:
