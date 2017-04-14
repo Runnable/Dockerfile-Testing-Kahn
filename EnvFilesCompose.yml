@@ -12,7 +12,7 @@ services:
       - ./env/bar/.env 
   web1:
     build: 
-      context: git@github.com:Runnable/Dockerfile-Testing-Kahn-1
+      context: git@github.com:Runnable/Dockerfile-Testing-Kahn-1#84efb695eabd96afb6e025665de8e63cf4f0e012
       dockerfile: Dockerfile
     container_name: web
     environment:
