@@ -18,7 +18,7 @@ services:
     environment:
       - TESTFOO=true
       - TESTBar=false
-      - SMALLCHANGE=2
+      - SMALLCHANGE=24
     env_file:
       - ./env/foo/.env
   rethinkdb3:
