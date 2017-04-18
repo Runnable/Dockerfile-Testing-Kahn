@@ -13,7 +13,7 @@ services:
   web1:
     build: 
       context: git@github.com:Runnable/Dockerfile-Testing-Kahn-1
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile-1
     container_name: web
     environment:
       - TESTFOO=true
