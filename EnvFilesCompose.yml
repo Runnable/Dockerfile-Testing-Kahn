@@ -2,5 +2,6 @@ version: '2'
 services:
   rethinkdb3:
     image: 'rethinkdb'
+    
   rethinkdb4:
     image: 'rethinkdb'
