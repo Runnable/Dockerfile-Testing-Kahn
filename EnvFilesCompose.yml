@@ -10,7 +10,7 @@ services:
       - TESTBar=true
     env_file:
       - ./env/bar/.env 
-  web2:
+  web1:
     build: 
       context: git@github.com:Runnable/Dockerfile-Testing-Kahn-1
       dockerfile: Dockerfile-1
@@ -18,9 +18,9 @@ services:
     environment:
       - TESTFOO=true
       - TESTBar=false
-      - SMALLCHANGE=2
+      - SMALLCHANGE=1
     env_file:
-      - ./env/foo/.env
+      - ./env/bar/.env
   rethinkdb3:
     image: 'rethinkdb'
   rethinkdb4:
