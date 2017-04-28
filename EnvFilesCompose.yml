@@ -10,7 +10,7 @@ services:
       - TESTBar=true
     env_file:
       - ./env/bar/.env 
-  web1:
+  web4:
     build: 
       context: git@github.com:Runnable/Dockerfile-Testing-Kahn-1
       dockerfile: Dockerfile-1
