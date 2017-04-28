@@ -1,5 +1,15 @@
 version: '2'
 services:
+  web:
+    build:
+      context: git@github.com:Runnable/Dockerfile-Testing-Kahn
+      dockerfile: LoggerDockerfile
+    container_name: web
+    environment:
+      - TESTFOO=false
+      - TESTBar=true
+    env_file:
+      - ./env/bar/.env 
   web1:
     build: 
       context: git@github.com:Runnable/Dockerfile-Testing-Kahn-1
@@ -11,16 +21,6 @@ services:
       - SMALLCHANGE=2
     env_file:
       - ./env/bar/.env
-  web:
-    build:
-      context: git@github.com:Runnable/Dockerfile-Testing-Kahn
-      dockerfile: LoggerDockerfile
-    container_name: web
-    environment:
-      - TESTFOO=false
-      - TESTBar=true
-    env_file:
-      - ./env/bar/.env 
   rethinkdb3:
     image: 'rethinkdb'
   rethinkdb4:
