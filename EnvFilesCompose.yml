@@ -1,6 +1,6 @@
 version: '2'
 services:
-  web:
+  web1:
     build:
       context: git@github.com:Runnable/Dockerfile-Testing-Kahn
       dockerfile: LoggerDockerfile
